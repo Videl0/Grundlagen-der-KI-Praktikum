@@ -1,0 +1,93 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.Id3 
+Relation:     zoo-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    101
+Attributes:   17
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              type
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Id3
+
+
+legs = 0
+|  fins = 0
+|  |  toothed = 0: shellfish
+|  |  toothed = 1: reptile
+|  fins = 1
+|  |  eggs = 0: mammal
+|  |  eggs = 1: fish
+legs = 2
+|  hair = 0: bird
+|  hair = 1: mammal
+legs = 4
+|  hair = 0
+|  |  aquatic = 0: reptile
+|  |  aquatic = 1
+|  |  |  toothed = 0: shellfish
+|  |  |  toothed = 1: amphibian
+|  hair = 1: mammal
+legs = 5: shellfish
+legs = 6
+|  aquatic = 0: insect
+|  aquatic = 1: shellfish
+legs = 8: shellfish
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         101              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     mammal
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     fish
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     bird
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     shellfish
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     insect
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     amphibian
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     reptile
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 41  0  0  0  0  0  0 |  a = mammal
+  0 13  0  0  0  0  0 |  b = fish
+  0  0 20  0  0  0  0 |  c = bird
+  0  0  0 10  0  0  0 |  d = shellfish
+  0  0  0  0  8  0  0 |  e = insect
+  0  0  0  0  0  4  0 |  f = amphibian
+  0  0  0  0  0  0  5 |  g = reptile
+

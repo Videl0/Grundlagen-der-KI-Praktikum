@@ -1,0 +1,37 @@
+ID3 Baum:
+
+[Bildung]
+  Bildung = Abitur:
+    [Einkommen]
+      Einkommen = hoch:
+        -> O
+      Einkommen = niedrig:
+        -> M
+  Bildung = Bachelor:
+    [Alter]
+      Alter = >=35:
+        -> M
+      Alter = <35:
+        -> O
+  Bildung = Master:
+    -> O
+
+CAL3 Baum (S1=4, S2=0.7):
+
+[Bildung]
+  Bildung = Abitur:
+    -> M
+  Bildung = Bachelor:
+    -> M
+  Bildung = Master:
+    -> O
+
+Vorhersagen mit ID3:
+{'Alter': '>=35', 'Einkommen': 'hoch', 'Bildung': 'Abitur'} -> O
+{'Alter': '<35', 'Einkommen': 'niedrig', 'Bildung': 'Abitur'} -> M
+{'Alter': '<35', 'Einkommen': 'hoch', 'Bildung': 'Bachelor'} -> O
+
+Vorhersagen mit CAL3:
+{'Alter': '>=35', 'Einkommen': 'hoch', 'Bildung': 'Abitur'} -> M
+{'Alter': '<35', 'Einkommen': 'niedrig', 'Bildung': 'Abitur'} -> M
+{'Alter': '<35', 'Einkommen': 'hoch', 'Bildung': 'Bachelor'} -> M
