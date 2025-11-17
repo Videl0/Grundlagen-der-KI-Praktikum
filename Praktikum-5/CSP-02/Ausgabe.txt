@@ -1,0 +1,37 @@
+=== Experiment 1: Basis-Backtracking ===
+Haus 1: Fox, Kools, Norwegian, Water, Yellow
+Haus 2: Blue, Chesterfields, Horse, Tea, Ukranian
+Haus 3: Englishman, Milk, Red, Snails, Winston
+Haus 4: Dog, Ivory, LuckyStrike, OJ, Spaniard
+Haus 5: Coffee, Green, Japanese, Parliaments, Zebra
+
+nassigns: 75472
+Laufzeit: 2.1509s
+
+=== Experiment 2: MRV + Gradheuristik ===
+Haus 1: Fox, Kools, Norwegian, Water, Yellow
+Haus 2: Blue, Chesterfields, Horse, Tea, Ukranian
+Haus 3: Englishman, Milk, Red, Snails, Winston
+Haus 4: Dog, Ivory, LuckyStrike, OJ, Spaniard
+Haus 5: Coffee, Green, Japanese, Parliaments, Zebra
+
+nassigns: 1521
+Laufzeit: 0.0766s
+
+=== Experiment 3: AC-3 vor Backtracking ===
+AC-3 Konsistent? True
+AC-3 Checks: 875
+AC-3 Laufzeit: 0.0022s
+AC-3 unvollständig, starte Backtracking mit MRV+Grad...
+Haus 1: Fox, Kools, Norwegian, Water, Yellow
+Haus 2: Blue, Chesterfields, Horse, Tea, Ukranian
+Haus 3: Englishman, Milk, Red, Snails, Winston
+Haus 4: Dog, Ivory, LuckyStrike, OJ, Spaniard
+Haus 5: Coffee, Green, Japanese, Parliaments, Zebra
+
+nassigns: 115
+Backtracking-Laufzeit: 0.0050s
+
+=== Experiment 4: Min-Conflicts (lokal) ===
+Keine Lösung gefunden.
+Laufzeit: 5.6861s
